@@ -1,0 +1,24 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100%;
+}
+
+.flex-space-between {
+    margin: 5px 10px;
+}
+
+.send-request {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* .send-request__btn {
+    margin-left: auto;
+} */
