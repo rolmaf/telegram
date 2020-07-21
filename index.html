@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админка бота</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,16 +20,6 @@
                 <input type="text" class="message__input form-control" aria-label="Message" aria-describedby="addon-wrapping" >
             </div>
 
-
-
-            <div class="bot-token flex-space-between input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Токен</span>
-                </div>
-                <input type="text" class="bot-token__input form-control" aria-label="Token" aria-describedby="addon-wrapping">
-            </div>
-
-
             
             <div class="group-id flex-space-between input-group">
                 <div class="input-group-prepend">
@@ -36,10 +27,28 @@
                 </div>
                 <input type="text" class="group-id__input form-control" aria-label="Group Id" aria-describedby="addon-wrapping">
             </div>
+            <span class="custom-dropdown">
+                <select name="selectBot" id="selectBot">
+                    <option value="Edvard Bot">Edvard Bot - @edmithel_bot</option>
+                    <option value="Смирнов Антон">Смирнов Антон - @bipbipyarobot</option>
+                    <option value="Инна Рассказова">Инна Рассказова -  @rasskozovapcrebot</option>
+                    <option value="Парень из Ростова">Парень из Ростова - @rostovtopbot</option>
+                    <option value="Илон Маск">Илон Маск - @nalunerobot</option>
+                    <option value="Вебчик">Вебчик - @vebonelovebot</option>
+                </select>
+            </span>
             
             <div class="send-request">
-                <button class="btn btn-primary send-request__btn">Отправить Запрос</button>
-            </div>            
+                <button class="btn btn-primary send-request__btn mt-2">Отправить сообщение</button>
+            </div>
+            
+            <div class="getUpdates">
+                <button class="btn btn-warning getUpdates__btn mt-3">Запросить Апдейты</button>
+            </div>
+
+            <div class="getId">
+                <button class="btn btn-success getId__btn mt-3">ID последнего чата</button>
+            </div>
        </div> 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

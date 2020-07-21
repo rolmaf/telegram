@@ -1,24 +1,51 @@
-.wrapper {
+body {
     height: 100%;
+} 
+
+/* .wrapper {
+    height: 100;
+} */
+
+.admin {
+    height: 100% ;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-body {
-    height: 100%;
+.input-group {
+    margin-left: 0px auto;
+    max-width: 300px !important;
+}
+
+.send-request__btn {
+    width: 300px;
+    max-width: 300px;
+}
+
+.getUpdates__btn {
+    width: 300px;
+    max-width: 300px;
+}
+
+.getId__btn {
+    width: 300px;
+    max-width: 300px;
 }
 
 .flex-space-between {
     margin: 5px 10px;
 }
 
-.send-request {
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
+#selectBot {
+    width: 300px !important;
 }
 
-/* .send-request__btn {
-    margin-left: auto;
-} */
+.custom-dropdown select {
+    padding-right: 10px !important; 
+}
+
+::selection {
+    color: orange;
+}
